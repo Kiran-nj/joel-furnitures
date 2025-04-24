@@ -30,6 +30,7 @@
             <div class="hero-content">
                 <h1>Transform Your Space with Premium Furniture</h1>
                 <p>Discover our collection of handcrafted furniture designed for your comfort and style</p>
+                <p class="exchange-offer">Exchange offer applicable for all products</p>
                 <a href="#products" class="cta-button">Explore Products</a>
             </div>
         </div>
@@ -39,28 +40,56 @@
     <section id="products" class="products">
         <div class="container">
             <h2>Our Products</h2>
+            <p class="exchange-offer">Exchange offer applicable for all products</p>
             <div class="product-grid">
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1505693314120-0d443867891c" alt="Modern Sofa">
-                    <h3>Modern Sofa</h3>
-                    <p>Comfortable and stylish sofa for your living room</p>
-                    <span class="price">₹25,999</span>
-                    <button class="buy-button">View Details</button>
-                </div>
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1503602642458-232111445657" alt="Dining Table">
-                    <h3>Dining Table</h3>
-                    <p>Elegant dining table for family gatherings</p>
-                    <span class="price">₹18,999</span>
-                    <button class="buy-button">View Details</button>
-                </div>
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1505693314120-0d443867891c" alt="Bed Frame">
-                    <h3>Bed Frame</h3>
-                    <p>Luxurious bed frame for your bedroom</p>
-                    <span class="price">₹32,999</span>
-                    <button class="buy-button">View Details</button>
-                </div>
+                <a href="products/bed-frames.html" class="product-card">
+                    <img src="images/bed-frames/bed1.jpeg" alt="Bed Frames">
+                    <h3>Bed Frames</h3>
+                    <p>Elegant and comfortable bed frames for your bedroom</p>
+                    <span class="view-more">View Collection</span>
+                </a>
+                <a href="products/tables.html" class="product-card">
+                    <img src="images/tables/countertable.jpeg" alt="Tables">
+                    <h3>Tables</h3>
+                    <p>Stylish tables for living rooms</p>
+                    <span class="view-more">View Collection</span>
+                </a>
+                <a href="products/teapoy.html" class="product-card">
+                    <img src="images/Teapoy/teapoy.jpeg" alt="Teapoy">
+                    <h3>Teapoy</h3>
+                    <p>Classic teapoy designs for your living space</p>
+                    <span class="view-more">View Collection</span>
+                </a>
+                <a href="products/bedside.html" class="product-card">
+                    <img src="images/bedside/bedside.jpeg" alt="Bedside">
+                    <h3>Bedside</h3>
+                    <p>Modern bedside tables for your bedroom</p>
+                    <span class="view-more">View Collection</span>
+                </a>
+                <a href="products/bookshelf.html" class="product-card">
+                    <img src="images/bookshelf/bookshelf1.jpeg" alt="Bookshelf">
+                    <h3>Bookshelf</h3>
+                    <p>Elegant bookshelves for your books and decor</p>
+                    <span class="view-more">View Collection</span>
+                </a>
+                <a href="products/poojastand.html" class="product-card">
+                    <img src="images/pooja stand/poojastand1.jpeg" alt="Pooja Stand">
+                    <h3>Pooja Stand</h3>
+                    <p>Beautiful pooja stands for your spiritual space</p>
+                    <span class="view-more">View Collection</span>
+                </a>
+                <a href="products/almariah.html" class="product-card">
+                    <img src="images/almariah/almariah1.jpeg" alt="Almariah">
+                    <h3>Almariah</h3>
+                    <p>Spacious almariah for your storage needs</p>
+                    <span class="view-more">View Collection</span>
+                </a>
+                <a href="products/computer-table.html" class="product-card">
+                    <img src="images/computertable/computertable1.jpeg" alt="Computer Table">
+                    <h3>Computer Table</h3>
+                    <p>Ergonomic computer tables for your workspace</p>
+                    <span class="view-more">View Collection</span>
+                </a>
             </div>
         </div>
     </section>
@@ -80,11 +109,11 @@
                         <p>Happy Customers</p>
                     </div>
                     <div class="stat">
-                        <h3>500+</h3>
+                        <h3>5000+</h3>
                         <p>Products Delivered</p>
                     </div>
                     <div class="stat">
-                        <h3>10+</h3>
+                        <h3>20+</h3>
                         <p>Years Experience</p>
                     </div>
                 </div>
@@ -100,24 +129,17 @@
                 <div class="contact-info">
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <p>123 Furniture Street, Mumbai, India</p>
+                        <p>Thyyarapilly, Thammanam, Cochin - 32</p>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-phone"></i>
-                        <p>+91 123 456 7890</p>
+                        <p>Binoi: 9895110067, 7736099908</p>
                     </div>
                     <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>info@joelfurnitures.com</p>
+                        <i class="fas fa-building"></i>
+                        <p>Joel Furnitures</p>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <input type="tel" placeholder="Your Phone">
-                    <textarea placeholder="Your Message" required></textarea>
-                    <button type="submit" class="submit-button">Send Message</button>
-                </form>
             </div>
         </div>
     </section>
@@ -154,5 +176,17 @@
             </div>
         </div>
     </footer>
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu');
+            const navLinks = document.querySelector('.nav-links');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                mobileMenuBtn.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html> 
